@@ -1,10 +1,10 @@
-function UserProfile(name, email, imgUrl, key){
+function UserProfile({user}){
     return(
-        <li key={key}>
-            <h2>{name}</h2>
-            <p>{email}</p>
-            <img src={imgUrl} alt="test"/>
-        </li>
+        <div>
+            <h2>{user.name}</h2>
+            <p>{user.email}</p>
+            <img src={user.imgUrl} alt="test"/>
+        </div>
     )}
 
 export default UserProfile;
